@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo - روابط التواصل الاجتماعي</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23dba737' fill-opacity='0.2'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            animation: gradientBG 15s ease infinite;
+        }
+        
+        .container {
+            background: rgba(34, 34, 34, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(219, 167, 55, 0.3);
+            padding: 30px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            border: 2px solid #dba737;
+        }
+        
+        .profile {
+            margin-bottom: 30px;
+        }
+        
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #333;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(219, 167, 55, 0.5);
+            border: 2px solid #dba737;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #dba737;
+        }
+        
+        .username {
+            color: #999;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        
+        .link {
+            display: block;
+            padding: 14px 20px;
+            background: linear-gradient(to right, rgba(219, 167, 55, 0.1), rgba(219, 167, 55, 0.2));
+            border: 1px solid #dba737;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        
+        .link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(219, 167, 55, 0.3);
+            background: linear-gradient(to right, rgba(219, 167, 55, 0.2), rgba(219, 167, 55, 0.3));
+        }
+        
+        .link i {
+            margin-left: 10px;
+            font-size: 20px;
+            width: 24px;
+            text-align: center;
+        }
+        
+        footer {
+            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+            
+            .profile-image {
+                width: 100px;
+                height: 100px;
+                font-size: 36px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-image" style="background-image: url('https://www2.0zz0.com/2025/04/05/13/674943388.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+            </div>
+            <h1>Ricardo</h1>
+            <div class="username">@r4r60</div>
+        </div>
+        
+        <div class="links">
+            <a href="https://kick.com/r4r60" class="link" target="_blank">
+                <i class="fas fa-play-circle"></i>
+                Kick
+            </a>
+            
+            <a href="https://www.tiktok.com/@r4r6_0?_t=ZS-8vHSygynWVD&_r=1" class="link" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                تيك توك
+            </a>
+            
+            <a href="https://youtube.com/@r4r60?si=JXVxL0A7Z-Co9EBZ" class="link" target="_blank">
+                <i class="fab fa-youtube"></i>
+                يوتيوب
+            </a>
+            
+            <a href="https://discord.gg/BTZJ44cWGa" class="link" target="_blank">
+                <i class="fab fa-discord"></i>
+                دسكورد
+            </a>
+        </div>
+        
+        <footer>
+            &copy; 2025 Ricardo | جميع الحقوق محفوظة
+        </footer>
+    </div>
+</body>
+</html>
